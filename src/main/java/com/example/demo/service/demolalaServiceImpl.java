@@ -15,7 +15,7 @@ public class demolalaServiceImpl implements demolalaService{
         ResponseEntity<Integer> result = restTemplate.postForEntity(uri, null, Integer.class);
 
 
-        Integer res = result.getBody()*2;
+        Integer res = result.getBody()*3;
 
         return res;
     }
